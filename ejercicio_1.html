@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistema |Tesla</title>
+</head>
+<body>
+
+    
+
+    <script >
+
+    let montoTotal=0 , enganche=0.35 , mesesSinIntereses=18 , porcentajePagar=0 , restoPagar=0  ;
+
+
+    montoTotal= prompt("Ingrese el monto total" )
+    montoTotal = parseFloat(montoTotal);
+
+    porcentajePagar  = montoTotal * enganche;
+
+    restoPagar = (montoTotal - porcentajePagar) / mesesSinIntereses;
+
+    //restoPagar = Math.round(restoPagar); si se quiere redondear se activa esta linea
+
+
+
+    document.write("El enganche a pagar es de " + porcentajePagar + " Pesos ");
+
+
+    document.write("y en 18 meses sin intereses se debera pagar el resto que son : " + restoPagar + " pesos ");
+    </script>
+
+   
+</body>
+</html>

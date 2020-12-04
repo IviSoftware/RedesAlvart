@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cono | MatheFacil</title>
+</head>
+<body>
+    
+    <script>
+        var radio=0, generatriz=0,altura=0,areaBase=0,areaLateral=0,areaTotal=0;
+        radio = prompt('Ingrese el radio del cono ');
+        radio = parseFloat(radio);
+
+        altura = prompt('Ingrese la altura del cono');
+        altura = parseFloat(altura);
+
+        var x = Math.pow(altura,2) + Math.pow(radio,2);
+        generatriz = Math.sqrt(x);
+
+        areaBase = Math.PI * Math.pow(radio,2);
+        areaLateral = (2 * Math.PI * radio * generatriz)/2 ;
+
+        areaTotal = (areaBase + areaLateral)/Math.PI;
+
+      
+        
+
+
+        alert('El area de la base es : ' + areaBase);
+        alert('El area lateral es : ' + areaLateral);
+        alert('Y el area total es : ' + areaTotal);
+
+    </script>
+
+
+</body>
+</html>

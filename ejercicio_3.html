@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cambios | PixelCoin</title>
+</head>
+<body>
+    
+    <script>
+        var dolares=0,pesos = 11.96 , comision =0,total=0;
+        const porcentaje = .03
+        dolares = prompt("Ingrese la cantidad en dolares");
+        dolares=parseFloat(dolares)
+
+        total = dolares * pesos;
+        total = total.toFixed(2)
+
+        comision = (porcentaje * dolares);
+        if( dolares == 1 ){
+            alert("En conversion a pesos mexicanos " + dolares + " dolar es igual a " + total + " pesos mexicanos")
+            alert("por el servicio se le cobra el 3% de la cantidad en dolares , pague " + comision + " dolares de comision por favor")
+        }
+        else{
+            alert("En conversion a pesos mexicanos " + dolares + " dolares son igual a " + total + " pesos mexicanos")
+            alert("por el servicio se le cobra el 3% de la cantidad en dolares , pague " + comision + " dolares de comision por favor")
+
+        }
+        
+
+
+
+    </script>
+
+    
+</body>
+</html>

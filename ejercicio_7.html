@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Elije tu deporte | HyperSelection </title>
+</head>
+<body>
+
+    <script>
+        var temperatura  ;
+        temperatura = prompt("Ingresa la temperatura en grados Fahrenheit");
+        temperatura = parseFloat(temperatura);
+
+        if( temperatura > 85){
+            document.write('Usted debe practicar natación');
+        }
+        else if(temperatura > 70 && temperatura <=85){
+            document.write('Usted debe practicar Tenis');
+        }
+        else if(temperatura > 32  && temperatura <=70){
+            document.write('Usted debe practicar Golf');
+        }
+        else if(temperatura > 10 && temperatura <=32){
+            document.write('Ustede debe practicar Esqui');
+        }
+        else{
+            document.write('Usted debe practicar Marcha')
+        }
+        //marcha = temperatura <=10;
+
+        
+
+
+    </script>
+    
+</body>
+</html>

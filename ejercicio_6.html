@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo | HyperMoney</title>
+</head>
+<body>
+    
+    <script>
+        var sueldo=0,aumento=0;
+        const sueldoPromedio = 10000 , sueldoMedio=15000,porcentajeBajo=.08,porcentajeMedio=.11,porcentajeAlto=.15;
+       sueldo = prompt("Ingresa tu sueldo actual");
+       sueldo = parseFloat(sueldo);
+
+      if(sueldo<sueldoPromedio){
+        aumento = (sueldo*porcentajeAlto) + sueldo;
+        document.write("su nuevo sueldo es de : $ " + aumento);
+      }
+      else if(sueldo >= sueldoPromedio && sueldo < sueldoMedio ){
+        aumento = (sueldo*porcentajeMedio) + sueldo;
+        document.write("su nuevo sueldo es de : $ " + aumento);
+      }
+      else{
+        aumento = (sueldo*porcentajeBajo) + sueldo;
+        document.write("su nuevo sueldo es de : $ " + aumento);
+      }
+
+    </script>
+
+</body>
+</html>
